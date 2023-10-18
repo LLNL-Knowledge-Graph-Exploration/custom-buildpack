@@ -1,7 +1,14 @@
 [[buildpacks]]
   id = "your-custom-buildpack"
   version = "1.0"
+  uri = "https://github.com/LLNL-Knowledge-Graph-Exploration/custom-buildpack"
 
 [metadata]
   name = "Your Custom Buildpack"
   description = "A custom buildpack for C++ applications"
+
+[buildpack]
+  id = "your-custom-buildpack"
+  name = "your-custom-buildpack"
+  version = "1.0"
+  clear_env = false
