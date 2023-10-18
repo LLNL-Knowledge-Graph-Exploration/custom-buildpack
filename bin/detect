@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Check if this buildpack should be used for the app
+# Return 0 (success) if the app is compatible with this buildpack
+
+# For example:
+# Check if your application code includes specific files or markers
+
+exit 0

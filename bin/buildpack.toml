@@ -1,0 +1,7 @@
+[[buildpacks]]
+  id = "your-custom-buildpack"
+  version = "1.0"
+
+[metadata]
+  name = "Your Custom Buildpack"
+  description = "A custom buildpack for C++ applications"
