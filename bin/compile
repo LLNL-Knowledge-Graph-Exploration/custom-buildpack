@@ -31,5 +31,13 @@ fi
 export LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11:$LIBRARY_PATH
 export | grep -E -e ' (BOOST_ROOT|METALL_INCLUDE|LIBRARY_PATH)='  > "$LP_DIR/export"
 
+# Compile cmake files
+mkdir $BUILD_DIR/metall/build
+cd $BUILD_DIR/metall/build
+cmake ..
+
+# Check they are in build
+echo "Contents in Build: "
+ls
 
 echo "-----> Done compiling"
