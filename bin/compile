@@ -18,7 +18,7 @@ export BOOST_ROOT=$BUILD_DIR/.apt/usr/bin/boost_1_78_0
 git clone https://github.com/LLNL/metall $BUILD_DIR/metall
 export METALL_INCLUDE=$BUILD_DIR/metall/include
 
-new_cmake_lists="../CMakeLists.txt"
+new_cmake_lists="CMakeLists.txt"
 find / -type f -name CMakeLists.txt | xargs echo
 
 if [ -e "$new_cmake_lists" ]; then
