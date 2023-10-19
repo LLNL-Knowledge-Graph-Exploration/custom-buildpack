@@ -17,7 +17,7 @@ pwd
 mkdir /app/boost_1_78_0
 
 wget https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.gz
-tar xvf boost_1_78_0.tar.gz -C /app/.apt/usr/bin/boost_1_78_0
+tar xf boost_1_78_0.tar.gz -C /app/.apt/usr/bin/boost_1_78_0
 export BOOST_ROOT=/app/boost_1_78_0
 
 # Clone the metall repository
