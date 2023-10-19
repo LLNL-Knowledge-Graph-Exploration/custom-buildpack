@@ -15,16 +15,15 @@ pwd
 # Compile your C++ code
 
 # Install Boost
-# mkdir /app/.apt/usr/bin/boost_1_78_0
-mkdir /app/boost_1_78_0
+mkdir -p $BUILD_DIR/.apt/usr/bin/boost_1_78_0
 
 wget https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.gz
-tar xf boost_1_78_0.tar.gz -C /app/boost_1_78_0
-export BOOST_ROOT=/app/boost_1_78_0
+tar xf boost_1_78_0.tar.gz -C $BUILD_DIR/.apt/usr/bin/boost_1_78_0
+export BOOST_ROOT=$BUILD_DIR/.apt/usr/bin/boost_1_78_0
 
 # Clone the metall repository
-git clone https://github.com/LLNL/metall /app/metall
-export METALL_INCLUDE=/app/metall/include
+git clone https://github.com/LLNL/metall $BUILD_DIR/metall
+export METALL_INCLUDE=$BUILD_DIR/metall/include
 
 
 
