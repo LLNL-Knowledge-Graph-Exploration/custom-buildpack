@@ -4,6 +4,7 @@ echo "-----> Compiling C++ application"
 
 BUILD_DIR=$1
 echo $BUILD_DIR
+pwd
 
 # Download and install dependencies, e.g., Boost
 # Clone any required repositories
