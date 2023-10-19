@@ -22,6 +22,7 @@ if [ -e "$new_cmake_lists" ]; then
     echo "new cmake file exists."
     # Replace the original CMakeLists.txt with the new one
     mv "$new_cmake_lists" $BUILD_DIR/metall/CMakeLists.txt
+fi
 
 # Clean up or any other necessary steps
 export LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11:$LIBRARY_PATH
