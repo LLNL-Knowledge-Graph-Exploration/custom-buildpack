@@ -17,6 +17,12 @@ export BOOST_ROOT=$BUILD_DIR/.apt/usr/bin/boost_1_78_0
 git clone https://github.com/LLNL/metall $BUILD_DIR/metall
 export METALL_INCLUDE=$BUILD_DIR/metall/include
 
+new_cmake_lists="../CMakeLists.txt"
+if [ -e "$new_cmake_lists" ]; then
+    echo "new cmake file exists."
+    # Replace the original CMakeLists.txt with the new one
+    mv "$new_cmake_lists" $BUILD_DIR/metall/CMakeLists.txt
+
 # Clean up or any other necessary steps
 export LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11:$LIBRARY_PATH
 export | grep -E -e ' (BOOST_ROOT|METALL_INCLUDE|LIBRARY_PATH)='  > "$LP_DIR/export"
