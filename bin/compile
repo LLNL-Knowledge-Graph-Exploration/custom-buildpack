@@ -6,12 +6,15 @@ echo "-----> Compiling C++ application"
 # Clone any required repositories
 # Compile your C++ code
 
-# For example:
+# Install Boost
 wget https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.gz
 tar xvf boost_1_78_0.tar.gz
-export BOOST_ROOT=$PWD/boost_1_78_0
+export BOOST_ROOT=/app/.heroku/boost_1_78_0
+
+# Clone the metall repository
 git clone https://github.com/LLNL/metall
-export METALL_INCLUDE=$PWD/metall/include
+export METALL_INCLUDE=/app/.heroku/metall/include
+
 
 
 # Clean up or any other necessary steps
