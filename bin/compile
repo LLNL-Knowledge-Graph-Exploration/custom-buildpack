@@ -19,7 +19,6 @@ git clone https://github.com/LLNL/metall $BUILD_DIR/metall
 export METALL_INCLUDE=$BUILD_DIR/metall/include
 
 new_cmake_lists="CMakeLists.txt"
-find / -type f -name CMakeLists.txt | xargs echo
 
 if [ -e "$new_cmake_lists" ]; then
     echo "new cmake file exists."
