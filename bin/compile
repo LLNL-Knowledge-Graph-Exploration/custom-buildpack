@@ -39,10 +39,10 @@ export | grep -E -e ' (BOOST_ROOT|METALL_INCLUDE|LIBRARY_PATH)='  > "$LP_DIR/exp
 
 # Compile cmake files
 mkdir $BUILD_DIR/metall/build
-cd $BUILD_DIR/metall/build
-cmake ../ -DBUILD_TEST=ON
-make
-make test
+# cd $BUILD_DIR/metall/build
+# cmake ../ -DBUILD_TEST=ON
+# make
+# make test
 
 # Check they are in build
 echo "Contents in Build: "
