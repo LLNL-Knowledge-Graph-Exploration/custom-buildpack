@@ -3,6 +3,8 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 include(FetchContent)
 
 set(CMAKE_CXX_COMPILER g++-11)
+include_directories(/usr/lib/gcc/x86_64-linux-gnu/11)
+link_directories(/usr/lib/gcc/x86_64-linux-gnu/11)
 
 # -------------------------------------------------------------------------------- #
 # CMake policy
