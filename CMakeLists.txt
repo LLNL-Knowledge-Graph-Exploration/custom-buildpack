@@ -5,6 +5,8 @@ include(FetchContent)
 set(CMAKE_CXX_COMPILER g++-11)
 include_directories(/usr/lib/gcc/x86_64-linux-gnu/11)
 link_directories(/usr/lib/gcc/x86_64-linux-gnu/11)
+add_compile_options("-fsanitize=/usr/lib/gcc/x86_64-linux-gnu/11")
+link_libraries("-fsanitize=/usr/lib/gcc/x86_64-linux-gnu/11")
 
 # -------------------------------------------------------------------------------- #
 # CMake policy
