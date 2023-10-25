@@ -26,6 +26,13 @@ if [ -e "$new_cmake_lists" ]; then
     mv "$new_cmake_lists" $BUILD_DIR/metall/CMakeLists.txt
 fi
 
+stddef="/usr/lib/gcc/x86_64-linux-gnu/11/stddef.h"
+if [ -e "$stddef" ]; then
+    echo "stddef file exists"
+else
+    echo "stddef file or parent directory does not exist"
+fi
+
 # Clean up or any other necessary steps
 export LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11:$LIBRARY_PATH
 export | grep -E -e ' (BOOST_ROOT|METALL_INCLUDE|LIBRARY_PATH)='  > "$LP_DIR/export"
